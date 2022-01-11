@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>To Do List</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+    <body class="container">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="text-center">
+                            <h5>Your Daily To-Do List</h5>
+                            </div>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+
+                                <ul id="lists" style="list-style-type: none;" class="list-group">
+                                    <li value="1">
+                                        <input type="checkbox" id="chkToDo1" class="check" data-value="1"/>
+                                        Check status of my application
+                                    </li>
+                                </ul>
+                                <div style="margin-top: 25px;">
+                                    <button id="btnAdd" class="btn btn-success btn-block">Add Item</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="modules" src="./build/app.js"></script>
+    </body>
+</html>
